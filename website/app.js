@@ -86,9 +86,9 @@ const updateUI = async()=>{
 	 try{
 	 	const alldata = await response.json();
 
-	 	date.innerHTML = 'date:' + alldata[0].date;
-	 	temp.innerHTML = 'temprature: ' + alldata[0].temp;
-	 	content.innerHTML = 'feeling:' + alldata[0].content;
+	 	date.innerHTML = 'date:' + alldata/*[0]*/.date;
+	 	temp.innerHTML = 'temprature: ' + alldata/*[0]*/.temp;
+	 	content.innerHTML = 'feeling:' + alldata/*[0]*/.content;
 
     console.log(alldata);
     console.log('html updated');
